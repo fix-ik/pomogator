@@ -1,0 +1,28 @@
+{
+  "title": "Помогатор",
+  "description": "Помогатор для фиксиков и не только",
+  "lang": "ru",
+  "locale": "ru_RU",
+  "domain": "fixiki.in-wave.com",
+  "url": "https://fixiki.in-wave.com",
+  "canonical": "https://fixiki.in-wave.com/pomogator",
+  "pathPrefix": "/pomogator",
+  "paginationSize": 4,
+  "favicon": "/static/image/manifest/favicon.png",
+  "tags": ["eleventy", "wave", "theme", "template", "starter"],
+  "feed": {
+    "path": "/feed.xml"
+  },
+  "jsonfeed": {
+    "path": "/feed.json"
+  },
+  "author": {
+    "name": "fixik",
+    "email": "fixik@in-wave.com",
+    "url": "https://fixiki.in-wave.com/fixik"
+  },
+  "opengraph": {
+    "image": "/static/image/manifest/article.png",
+    "type": "article"
+  }
+}
