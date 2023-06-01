@@ -1,0 +1,11 @@
+{# Couldn't put this into a .css file for minification, because the font URLs need the | htmlBaseUrl helper.  #}
+<style>
+    @font-face {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        src: local(''),
+             url('{{ "/static/fonts/Lora/Lora-Medium.ttf" | htmlBaseUrl }}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+             url('{{ "/static/fonts/Lora/Lora-Bold.ttf" | htmlBaseUrl }}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+</style>

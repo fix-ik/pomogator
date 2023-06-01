@@ -1,0 +1,25 @@
+<!-- Основные мета-теги -->
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="{{ metadata.author.name }}">
+<meta name="description" content="{{ description or metadata.description }}">
+<meta name="keywords" content="{{ (tags or metadata.tags) | filterTagList }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+{# <!-- Open Graph / Facebook --> #}
+{# <meta property="og:title" content="{{ title or metadata.title }}"/> #}
+{# <meta property="og:url" content="{{ page.url | htmlBaseUrl(metadata.url) }}" /> #}
+{# <meta property="og:description" content="{{ description or metadata.description }}" /> #}
+{# <meta property="og:image" content="{{ (opengraph.image or metadata.opengraph.image) | htmlBaseUrl(metadata.url) }}" /> #}
+{# <meta property="og:type" content="{{ metadata.opengraph.type }}" /> #}
+{# <meta property="og:article:author" content="{{ metadata.author.name }}" /> #}
+{# <meta property="og:article:tag" content="{{ (tags or metadata.tags) | filterTagList }}" /> #}
+{# <!-- Twitter --> #}
+{# <meta property="twitter:card" content="summary_large_image"> #}
+{# <meta property="twitter:url" content="{{ page.url | htmlBaseUrl(metadata.url) }}"> #}
+{# <meta property="twitter:title" content="{{ title or metadata.title }}"> #}
+{# <meta property="twitter:description" content="{{ description or metadata.description }}"> #}
+{# <meta property="twitter:image" content="{{ (opengraph.image or metadata.opengraph.image) | htmlBaseUrl(metadata.url) }}"> #}

@@ -1,0 +1,8 @@
+<footer>
+    <ul class="bottomlinks">
+        {%- for item in bottomlinks -%}
+        <li><a href="{{ item.link }}">{{ item.text }}</a></li>&nbsp;&nbsp;&nbsp;
+        {%- endfor -%}
+    </ul>
+    <p>&mdash; &copy; {% year %} {{ metadata.author.name }} &mdash;</p>
+</footer>

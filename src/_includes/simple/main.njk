@@ -1,0 +1,5 @@
+<main>
+    <h1><a href="">{%- if title %}{{ title | markdown | safe }}{%- endif %}</a></h1>
+    {{ content | safe }}
+    {% if includePagination %}{% include "simple/pagination.njk" %}{% endif %}
+</main>

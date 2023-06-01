@@ -1,0 +1,18 @@
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="alternate" href="{{ metadata.feed.path }}" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="{{ metadata.jsonfeed.path  }}" type="application/json" title="{{ metadata.title }}">
+<link rel="canonical" href="{{ canonical or metadata.canonical }}">
+<link rel="icon" href="{{ metadata.favicon }}" type="image/x-icon" />
+
+<link rel="stylesheet" href="/static/vendor/simpledotcss/simple.min.css">
+<link rel="stylesheet" href="/static/css/simple/index.css">
+<link rel="stylesheet" href="/static/vendor/prism/prism-themes/themes/prism-material-oceanic.css">
+{% if extraWideMedia==true %}
+<link rel="stylesheet" href="/static/css/simple/fullbleed.css">
+{% endif %}
+
+{# <link rel="apple-touch-icon" sizes="120x120" href="@@path/assets/img/favicon/apple-touch-icon.png"> #}
+{# <link rel="icon" type="image/png" sizes="32x32" href="@@path/assets/img/favicon/favicon-32x32.png"> #}
+{# <link rel="icon" type="image/png" sizes="16x16" href="@@path/assets/img/favicon/favicon-16x16.png"> #}
+{# <link rel="manifest" href="@@path/assets/img/favicon/site.webmanifest"> #}
+{# <link rel="mask-icon" href="@@path/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff"> #}
