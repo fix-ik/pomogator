@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+<head>
+    <title>{{ title or metadata.title }}</title>
+    {% include "simple/meta.njk"     %}
+    {% include "simple/link.njk"     %}
+    {% include "simple/fontface.njk" %}
+    {% if includeJsonLD %}{% include "simple/jsonld.njk" %}{% endif %}
+</head>
+<body>
+    {% include "simple/header.njk"  %}
+    {% include "simple/main.njk"    %}
+    {% include "simple/footer.njk"  %}
+    {# Detects if images are in the content, it will add the simplelightbox JS/CSS if needed.  #}
+    {# {% include "simple/scripts.njk" %} #}
+    {% addLightBoxRefIfNecessary    %}
+    <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+</body>
+</html>
