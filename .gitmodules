@@ -1,0 +1,4 @@
+[submodule "src/wave"]
+	path = src/wave
+	url = https://github.com/fix-ik/pomogator-wave.git
+	branch = ru
